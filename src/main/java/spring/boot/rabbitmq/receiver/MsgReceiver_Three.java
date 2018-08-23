@@ -9,7 +9,7 @@ import spring.boot.rabbitmq.config.RabbitConfig;
 /**
  * @author 武海升
  * @date 2018/8/23 10:16
- * @desc 一个生产者，多个消费者
+ * @desc 广播接收信息
  */
 @Component
 @RabbitListener(queues = RabbitConfig.QUEUE_C)
