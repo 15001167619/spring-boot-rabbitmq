@@ -80,7 +80,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring.boot.version}</version>
                 <configuration>
-                    <mainClass>spring.boot.rabbitmq.RabbitMQApplication</mainClass>
+                    <mainClass>spring.boot.rabbitmq.RabbitMqApplication</mainClass>
                     <fork>true</fork>
                 </configuration>
                 <executions>

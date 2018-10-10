@@ -17,7 +17,7 @@ import spring.boot.rabbitmq.producer.MsgProducerServerManyReceiver;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 @Slf4j
-public class RabbitMQTest {
+public class RabbitMqTest {
 
     @Autowired
     private MsgProducer msgProducer;

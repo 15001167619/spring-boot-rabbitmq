@@ -11,11 +11,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @SpringBootApplication
 @Slf4j
-public class RabbitMQApplication {
+public class RabbitMqApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RabbitMQApplication.class, args);
-        log.info("Application  Spring Boot RabbitMQ start-up is success!");
+        SpringApplication.run(RabbitMqApplication.class, args);
+        log.info("Application  Spring Boot RabbitMq start-up is success!");
     }
 
 }
