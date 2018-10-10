@@ -9,16 +9,16 @@ import spring.boot.rabbitmq.config.RabbitConfig;
 /**
  * @author 武海升
  * @date 2018/8/23 10:16
- * @desc 一个生产者，多个消费者
+ * @desc 广播接收信息
  */
 @Component
-@RabbitListener(queues = RabbitConfig.QUEUE_B)
+@RabbitListener(queues = RabbitConfig.QUEUE_C)
 @Slf4j
-public class MsgReceiver_Two {
+public class MsgReceiverThree {
 
     @RabbitHandler
     public void process(String content) {
-        log.info("处理器two接收处理队列B当中的消息： " + content);
+        log.info("处理器three接收处理队列C当中的消息： " + content);
     }
 
 }

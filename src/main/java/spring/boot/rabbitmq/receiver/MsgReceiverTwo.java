@@ -14,11 +14,11 @@ import spring.boot.rabbitmq.config.RabbitConfig;
 @Component
 @RabbitListener(queues = RabbitConfig.QUEUE_B)
 @Slf4j
-public class MsgReceiver_One {
+public class MsgReceiverTwo {
 
     @RabbitHandler
     public void process(String content) {
-        log.info("处理器one接收处理队列B当中的消息： " + content);
+        log.info("处理器two接收处理队列B当中的消息： " + content);
     }
 
 }
