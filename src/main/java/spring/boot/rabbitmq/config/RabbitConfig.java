@@ -67,6 +67,7 @@ public class RabbitConfig {
         connectionFactory.setPassword(password);
         connectionFactory.setVirtualHost("/");
         connectionFactory.setPublisherConfirmType(CachingConnectionFactory.ConfirmType.SIMPLE);
+        connectionFactory.setPublisherConfirms(true);
         return connectionFactory;
     }
 
