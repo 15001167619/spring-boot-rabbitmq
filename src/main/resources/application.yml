@@ -11,11 +11,16 @@ spring:
   application:
     name: spring-boot-rabbitmq
   rabbitmq:
-    host: 127.0.0.1
+    host: 118.31.4.12
     port: 5672
-    username: guest
-    password: guest
+    username: bingo
+    password: BFB9fcPHKks
+    template:
+      mandatory: true
 
 
 logging:
-  config: classpath:logback.xml
+  level.root: info
+  level.spring.boot.rabbitmq: debug
+  file:
+    name: api.log
